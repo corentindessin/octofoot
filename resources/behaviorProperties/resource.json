@@ -1,0 +1,90 @@
+{
+  "behaviors": {
+    "PlayerBehavior": {
+      "scriptId": "4",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "index",
+          "type": "number"
+        }
+      ]
+    },
+    "BallBehavior": {
+      "scriptId": "10",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "lerpStretch",
+          "type": "number"
+        },
+        {
+          "name": "y",
+          "type": "number"
+        },
+        {
+          "name": "yVelocity",
+          "type": "number"
+        }
+      ]
+    },
+    "ProjectileBehavior": {
+      "scriptId": "17",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "angle",
+          "type": "number"
+        },
+        {
+          "name": "forceAmount",
+          "type": "number"
+        }
+      ]
+    },
+    "CameraBehavior": {
+      "scriptId": "19",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "SmokeBehavior": {
+      "scriptId": "39",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "BumperBehavior": {
+      "scriptId": "41",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "cooldown",
+          "type": "number"
+        }
+      ]
+    },
+    "BubbleBehavior": {
+      "scriptId": "44",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    }
+  }
+}
