@@ -23,6 +23,7 @@ class BumperBehavior extends Sup.Behavior {
       Game.ball.bounce();
       this.actor.spriteRenderer.setAnimation("Bounce", false);
       this.cooldown = BumperBehavior.cooldownValue;
+      Sup.Audio.playSound("Bumper/Sound", 0.5);
     }
   }
 }

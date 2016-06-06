@@ -23,7 +23,9 @@ class BallBehavior extends Sup.Behavior {
   update() {
     if (!this.spriteRenderer.isAnimationPlaying()) this.spriteRenderer.setAnimation("Idle");
     
-    Sup.ArcadePhysics2D.collides(this.actor.arcadeBody2D, Game.ballCollidables);
+    if (Sup.ArcadePhysics2D.collides(this.actor.arcadeBody2D, Game.ballCollidables))
+      Sup.Audio.playSound("Ball/Sound", 0.5);
+      
     this.position = this.actor.getLocalPosition().toVector2();
     
     this.lerpStretch = Sup.Math.lerp(this.lerpStretch, 1, 0.15);
@@ -52,9 +54,12 @@ class BallBehavior extends Sup.Behavior {
     Sup.getActor(`Score ${playerIndex + 1}`).textRenderer.setText(Game.scores[playerIndex]);
     
     Game.camera.shake();
+    Sup.Audio.playSound("Goal");
     
     Sup.setTimeout(1000, () => {
       if (Game.scores[playerIndex] === Game.winScore) {
+        Sup.Audio.playSound("Victory");
+        
         const winActor = Sup.getActor("Win");
         winActor.setVisible(true);
         winActor.textRenderer.setText(`Player ${playerIndex + 1}\nwins!`);
@@ -67,6 +72,7 @@ class BallBehavior extends Sup.Behavior {
   applyImpulse(angle: number, amount: number) {
     if (Game.finished) return;
 
+    Sup.Audio.playSound("Ball/Sound", 0.5);
     makeSmoke(this.position);
     
     this.ballContainer.setLocalEulerZ(angle);

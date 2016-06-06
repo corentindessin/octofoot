@@ -46,6 +46,7 @@ class ProjectileBehavior extends Sup.Behavior {
       this.life -= 30;
 
       if (this.rebounds < 0 || this.life < 0) this.explode();
+      else Sup.Audio.playSound("Player/Projectile/Sound", 0.5, { pitch: 1 - (this.rebounds / 5) });
     }
 
     this.position = this.actor.getLocalPosition().toVector2();
@@ -54,6 +55,7 @@ class ProjectileBehavior extends Sup.Behavior {
   explode() {
     this.hasExploded = true;
     this.actor.spriteRenderer.setAnimation("Explode").playAnimation(false);
+    Sup.Audio.playSound("Player/Projectile/Explode");
   }
 }
 Sup.registerBehavior(ProjectileBehavior);

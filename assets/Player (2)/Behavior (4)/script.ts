@@ -109,9 +109,13 @@ class PlayerBehavior extends Sup.Behavior {
       
       this.punchChargeSpriteRenderer.actor.setLocalEulerZ(angleToBall);
     } else {
-      if (this.punchCharge !== 0 && distanceToBall < PlayerBehavior.maxPunchDistance) {
-        const amplitude = PlayerBehavior.minPunchPower + this.punchCharge / PlayerBehavior.maxCharge * (PlayerBehavior.maxPunchPower - PlayerBehavior.minPunchPower);
-        Game.ball.applyImpulse(angleToBall, amplitude);
+      if (this.punchCharge !== 0) {
+        Sup.Audio.playSound("Player/Punch Sound", 1, { pitch:0.5 });
+
+        if (distanceToBall < PlayerBehavior.maxPunchDistance) {
+          const amplitude = PlayerBehavior.minPunchPower + this.punchCharge / PlayerBehavior.maxCharge * (PlayerBehavior.maxPunchPower - PlayerBehavior.minPunchPower);
+          Game.ball.applyImpulse(angleToBall, amplitude);
+        }
       }
       
       this.punchCharge = 0;
@@ -145,7 +149,9 @@ class PlayerBehavior extends Sup.Behavior {
       this.projectileChargeSpriteRenderer.actor.setLocalEulerZ(this.projectileAngle);
     } else {
       if (this.projectileCharge !== 0) {
+        Sup.Audio.playSound("Player/Projectile/Sound");
         this.projectileCooldown = PlayerBehavior.projectileCooldownValue;
+
         const projectileActor = new Sup.Actor("Projectile");
         projectileActor.setLocalPosition(this.position);
         projectileActor.setLocalZ(5);
@@ -179,5 +185,5 @@ namespace PlayerBehavior {
   export const maxPunchDistance = 2;
   
   export const maxProjectilePower = 0.3;
-  export const projectileCooldownValue = 60;
+  export const projectileCooldownValue = 40;
 }

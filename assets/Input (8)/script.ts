@@ -8,10 +8,10 @@ namespace Input {
     if (horizontalAxis !== 0 || verticalAxis !== 0) {
       angle = Math.atan2(-verticalAxis, horizontalAxis);
     } else {
-      const leftDown = Sup.Input.isKeyDown(index === 0 ? "LEFT" : "Q");
-      const rightDown = Sup.Input.isKeyDown(index === 0 ? "RIGHT" : "D");
-      const upDown = Sup.Input.isKeyDown(index === 0 ? "UP" : "Z");
-      const downDown = Sup.Input.isKeyDown(index === 0 ? "DOWN" : "S");
+      const leftDown = index === 0 ? Sup.Input.isKeyDown("LEFT"): Sup.Input.isKeyDown("A") || Sup.Input.isKeyDown("Q");
+      const rightDown = index === 0 ? Sup.Input.isKeyDown("RIGHT"): Sup.Input.isKeyDown("D");
+      const upDown = index === 0 ? Sup.Input.isKeyDown("UP"): Sup.Input.isKeyDown("W") || Sup.Input.isKeyDown("Z");
+      const downDown = index === 0 ? Sup.Input.isKeyDown("DOWN"): Sup.Input.isKeyDown("S");
       
       if (leftDown) {
         if (upDown) {
