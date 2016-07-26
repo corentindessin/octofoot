@@ -1,275 +1,278 @@
-[
-  {
-    "id": "3",
-    "name": "Scene",
-    "type": "scene"
-  },
-  {
-    "id": "14",
-    "name": "Font",
-    "type": "font"
-  },
-  {
-    "id": "12",
-    "name": "Game",
-    "type": "script"
-  },
-  {
-    "id": "19",
-    "name": "Camera Behavior",
-    "type": "script"
-  },
-  {
-    "id": "8",
-    "name": "Input",
-    "type": "script"
-  },
-  {
-    "id": "5",
-    "name": "Maps",
-    "type": null,
-    "children": [
-      {
-        "id": "6",
-        "name": "Tile Set",
-        "type": "tileSet"
-      },
-      {
-        "id": "7",
-        "name": "Map",
-        "type": "tileMap"
-      },
-      {
-        "id": "20",
-        "name": "Background",
-        "type": "sprite"
-      },
-      {
-        "id": "22",
-        "name": "Wall Down",
-        "type": "sprite"
-      },
-      {
-        "id": "23",
-        "name": "Wall Up",
-        "type": "sprite"
-      },
-      {
-        "id": "33",
-        "name": "Algea",
-        "type": "sprite"
-      }
-    ]
-  },
-  {
-    "id": "38",
-    "name": "Effects",
-    "type": null,
-    "children": [
-      {
-        "id": "42",
-        "name": "Smoke",
-        "type": null,
-        "children": [
-          {
-            "id": "39",
-            "name": "Behavior",
-            "type": "script"
-          },
-          {
-            "id": "31",
-            "name": "Sprite 1",
-            "type": "sprite"
-          },
-          {
-            "id": "32",
-            "name": "Sprite 2",
-            "type": "sprite"
-          }
-        ]
-      },
-      {
-        "id": "43",
-        "name": "Bubble",
-        "type": null,
-        "children": [
-          {
-            "id": "44",
-            "name": "Behavior",
-            "type": "script"
-          },
-          {
-            "id": "30",
-            "name": "Sprite 1",
-            "type": "sprite"
-          },
-          {
-            "id": "34",
-            "name": "Sprite 2",
-            "type": "sprite"
-          },
-          {
-            "id": "35",
-            "name": "Sprite 3",
-            "type": "sprite"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "2",
-    "name": "Player",
-    "type": null,
-    "children": [
-      {
-        "id": "4",
-        "name": "Behavior",
-        "type": "script"
-      },
-      {
-        "id": "27",
-        "name": "Char",
-        "type": null,
-        "children": [
-          {
-            "id": "0",
-            "name": "Leonard",
-            "type": "sprite"
-          },
-          {
-            "id": "28",
-            "name": "Blue",
-            "type": "sprite"
-          }
-        ]
-      },
-      {
-        "id": "11",
-        "name": "Punch Charge",
-        "type": "sprite"
-      },
-      {
-        "id": "36",
-        "name": "Punch Contact",
-        "type": "sprite"
-      },
-      {
-        "id": "21",
-        "name": "Shadow",
-        "type": "sprite"
-      },
-      {
-        "id": "13",
-        "name": "Projectile Charge",
-        "type": "sprite"
-      },
-      {
-        "id": "49",
-        "name": "Punch Sound",
-        "type": "sound"
-      },
-      {
-        "id": "16",
-        "name": "Projectile",
-        "type": null,
-        "children": [
-          {
-            "id": "17",
-            "name": "Behavior",
-            "type": "script"
-          },
-          {
-            "id": "18",
-            "name": "Sprite",
-            "type": "sprite"
-          },
-          {
-            "id": "25",
-            "name": "Shadow",
-            "type": "sprite"
-          },
-          {
-            "id": "48",
-            "name": "Sound",
-            "type": "sound"
-          },
-          {
-            "id": "52",
-            "name": "Explode",
-            "type": "sound"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "1",
-    "name": "Ball",
-    "type": null,
-    "children": [
-      {
-        "id": "10",
-        "name": "Behavior",
-        "type": "script"
-      },
-      {
-        "id": "29",
-        "name": "Shadow",
-        "type": "sprite"
-      },
-      {
-        "id": "9",
-        "name": "Sprite",
-        "type": "sprite"
-      },
-      {
-        "id": "47",
-        "name": "Sound",
-        "type": "sound"
-      }
-    ]
-  },
-  {
-    "id": "40",
-    "name": "Bumper",
-    "type": null,
-    "children": [
-      {
-        "id": "41",
-        "name": "Behavior",
-        "type": "script"
-      },
-      {
-        "id": "26",
-        "name": "Sprite",
-        "type": "sprite"
-      },
-      {
-        "id": "50",
-        "name": "Sound",
-        "type": "sound"
-      }
-    ]
-  },
-  {
-    "id": "45",
-    "name": "Music",
-    "type": "sound"
-  },
-  {
-    "id": "51",
-    "name": "Goal",
-    "type": "sound"
-  },
-  {
-    "id": "53",
-    "name": "Victory",
-    "type": "sound"
-  },
-  {
-    "id": "24",
-    "name": "Start",
-    "type": "script"
-  }
-]
+{
+  "nextEntryId": 53,
+  "nodes": [
+    {
+      "id": "3",
+      "name": "Scene",
+      "type": "scene"
+    },
+    {
+      "id": "14",
+      "name": "Font",
+      "type": "font"
+    },
+    {
+      "id": "12",
+      "name": "Game",
+      "type": "script"
+    },
+    {
+      "id": "19",
+      "name": "Camera Behavior",
+      "type": "script"
+    },
+    {
+      "id": "8",
+      "name": "Input",
+      "type": "script"
+    },
+    {
+      "id": "5",
+      "name": "Maps",
+      "type": null,
+      "children": [
+        {
+          "id": "6",
+          "name": "Tile Set",
+          "type": "tileSet"
+        },
+        {
+          "id": "7",
+          "name": "Map",
+          "type": "tileMap"
+        },
+        {
+          "id": "20",
+          "name": "Background",
+          "type": "sprite"
+        },
+        {
+          "id": "22",
+          "name": "Wall Down",
+          "type": "sprite"
+        },
+        {
+          "id": "23",
+          "name": "Wall Up",
+          "type": "sprite"
+        },
+        {
+          "id": "33",
+          "name": "Algea",
+          "type": "sprite"
+        }
+      ]
+    },
+    {
+      "id": "38",
+      "name": "Effects",
+      "type": null,
+      "children": [
+        {
+          "id": "42",
+          "name": "Smoke",
+          "type": null,
+          "children": [
+            {
+              "id": "39",
+              "name": "Behavior",
+              "type": "script"
+            },
+            {
+              "id": "31",
+              "name": "Sprite 1",
+              "type": "sprite"
+            },
+            {
+              "id": "32",
+              "name": "Sprite 2",
+              "type": "sprite"
+            }
+          ]
+        },
+        {
+          "id": "43",
+          "name": "Bubble",
+          "type": null,
+          "children": [
+            {
+              "id": "44",
+              "name": "Behavior",
+              "type": "script"
+            },
+            {
+              "id": "30",
+              "name": "Sprite 1",
+              "type": "sprite"
+            },
+            {
+              "id": "34",
+              "name": "Sprite 2",
+              "type": "sprite"
+            },
+            {
+              "id": "35",
+              "name": "Sprite 3",
+              "type": "sprite"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Player",
+      "type": null,
+      "children": [
+        {
+          "id": "4",
+          "name": "Behavior",
+          "type": "script"
+        },
+        {
+          "id": "27",
+          "name": "Char",
+          "type": null,
+          "children": [
+            {
+              "id": "0",
+              "name": "Leonard",
+              "type": "sprite"
+            },
+            {
+              "id": "28",
+              "name": "Blue",
+              "type": "sprite"
+            }
+          ]
+        },
+        {
+          "id": "11",
+          "name": "Punch Charge",
+          "type": "sprite"
+        },
+        {
+          "id": "36",
+          "name": "Punch Contact",
+          "type": "sprite"
+        },
+        {
+          "id": "21",
+          "name": "Shadow",
+          "type": "sprite"
+        },
+        {
+          "id": "13",
+          "name": "Projectile Charge",
+          "type": "sprite"
+        },
+        {
+          "id": "49",
+          "name": "Punch Sound",
+          "type": "sound"
+        },
+        {
+          "id": "16",
+          "name": "Projectile",
+          "type": null,
+          "children": [
+            {
+              "id": "17",
+              "name": "Behavior",
+              "type": "script"
+            },
+            {
+              "id": "18",
+              "name": "Sprite",
+              "type": "sprite"
+            },
+            {
+              "id": "25",
+              "name": "Shadow",
+              "type": "sprite"
+            },
+            {
+              "id": "48",
+              "name": "Sound",
+              "type": "sound"
+            },
+            {
+              "id": "52",
+              "name": "Explode",
+              "type": "sound"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Ball",
+      "type": null,
+      "children": [
+        {
+          "id": "10",
+          "name": "Behavior",
+          "type": "script"
+        },
+        {
+          "id": "29",
+          "name": "Shadow",
+          "type": "sprite"
+        },
+        {
+          "id": "9",
+          "name": "Sprite",
+          "type": "sprite"
+        },
+        {
+          "id": "47",
+          "name": "Sound",
+          "type": "sound"
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "name": "Bumper",
+      "type": null,
+      "children": [
+        {
+          "id": "41",
+          "name": "Behavior",
+          "type": "script"
+        },
+        {
+          "id": "26",
+          "name": "Sprite",
+          "type": "sprite"
+        },
+        {
+          "id": "50",
+          "name": "Sound",
+          "type": "sound"
+        }
+      ]
+    },
+    {
+      "id": "45",
+      "name": "Music",
+      "type": "sound"
+    },
+    {
+      "id": "51",
+      "name": "Goal",
+      "type": "sound"
+    },
+    {
+      "id": "53",
+      "name": "Victory",
+      "type": "sound"
+    },
+    {
+      "id": "24",
+      "name": "Start",
+      "type": "script"
+    }
+  ]
+}
