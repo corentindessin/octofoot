@@ -9,7 +9,7 @@ class ProjectileBehavior extends Sup.Behavior {
   private hasExploded = false;
   
   awake() {
-    const options: BoxOptions = { movable: true, width: 0.6, height: 0.6, bounceX: 0.6, bounceY: 0.6 }
+    const options: BoxOptions = { movable: true, width: 0.6, height: 0.6, bounce: { x: 0.6, y: 0.6 } }
     new Sup.ArcadePhysics2D.Body(this.actor, Sup.ArcadePhysics2D.BodyType.Box, options);
     
     const speed = 0.2 + this.forceAmount;

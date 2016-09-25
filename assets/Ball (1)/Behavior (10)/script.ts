@@ -12,7 +12,7 @@ class BallBehavior extends Sup.Behavior {
   awake() {
     Game.ball = this;
     
-    const options: BoxOptions = { movable: true, width: 0.6, height: 0.6, bounceX: 0.8, bounceY: 0.8 }
+    const options: BoxOptions = { movable: true, width: 0.6, height: 0.6, bounce: { x: 0.8, y: 0.8 } }
     new Sup.ArcadePhysics2D.Body(this.actor, Sup.ArcadePhysics2D.BodyType.Box, options);
     this.actor.arcadeBody2D.setVelocityMultiplier(0.98, 0.98);
     
